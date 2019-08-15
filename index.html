@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./style.css"/>
 
 </head>
@@ -20,13 +21,15 @@
     </div>
 
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
             <div class="card mb-4">
-                <div class="card-header">
+                <div class="card-header rules">
                     <p>Click the skulls, if you dare! Each skull gets you close to your target score by a random amount. If you match the total, you win! If you go above the target... you go below the ground!</p>
                 </div>
             </div>
         </div>
+        <div class="col-md-3"></div>
     </div>
 
     <!-- Target Score -->
@@ -58,9 +61,9 @@
                     Reliquary of Skulls
                 </div>
                 <div class="card-body reliquary">
-                    <img class="skull" src="images/skull1.png" alt="skull one">
-                    <img class="skull" src="images/skull2.png" alt="skull two">
-                    <img class="skull" src="images/skull3.png" alt="skull three">
+                    <img class="skull" src="images/skull1.png" id="one" alt="skull one">
+                    <img class="skull" src="images/skull2.png" id="two" alt="skull two">
+                    <img class="skull" src="images/skull3.png" id="three" alt="skull three">
                 </div>
             </div>
         </div>
@@ -92,6 +95,6 @@
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="logic.js"></script>
+    <script src="./logic.js"></script>
 </body>
 </html>

@@ -1,8 +1,37 @@
 body {
-    background-image: url(./images/bg.png);
+    background-image: url("./images/bg.png");
     background-repeat: no-repeat;
-    background-size: fill;
-    width: 100%;
+
+}
+
+.jumbotron {
+    background-image: url(./images/bg.png);
+}
+
+h1 {
+    font-family: 'Beth Ellen', cursive;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+h3, p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+.card-body {
+    background-color: #111344;
+    color: white;
+    text-align: center;
+}
+
+.rules {
+    background-color: #52154E;
+    color: white;
 }
 
 .reliquary {

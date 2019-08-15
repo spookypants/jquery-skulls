@@ -23,7 +23,7 @@ var winCount = 0;
 var lossCount = 0;
 
 var getRandom = function(min, max) {
-    return Math.floor(Math.random() * (min - max + 1)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
 var startGame = function() {
@@ -37,4 +37,45 @@ var startGame = function() {
     $("#your-score").text(currentScore);
     $("#target-score").text(targetScore);
 
-}
+    console.log("-----------------------");
+    console.log("Target Score: " + targetScore);
+    console.log("One: " + skull.one.value + " | Two: " + skull.two.value + " | Three: " + skull.three.value);
+    console.log("-----------------------");
+};
+
+var checkWin = function() {
+    if (currentScore > targetScore) {
+        alert("Sorry; now you'll be buried alive!");
+        console.log("You suck");
+        lossCount++;
+        $("#loss-count").text(lossCount);
+        startGame();
+    } else if (currentScore === targetScore) {
+        alert("Congratulations -- you survived!");
+        console.log("You won... this time");
+        winCount++;
+        $("#win-count").text(winCount);
+        startGame();
+    }
+};
+
+var addValues = function(clickedSkull) {
+    currentScore += clickedSkull.value;
+    $("#your-score").text(currentScore);
+    checkWin();
+    console.log("Your Score: " + currentScore);
+};
+
+startGame();
+
+$("#one").click(function() {
+    addValues(skull.one);
+});
+
+$("#two").click(function() {
+    addValues(skull.two);
+});
+
+$("#three").click(function() {
+    addValues(skull.three);
+});
