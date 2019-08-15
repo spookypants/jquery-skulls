@@ -1,0 +1,21 @@
+body {
+    background-image: url(./images/bg.png);
+    background-repeat: no-repeat;
+    background-size: fill;
+    width: 100%;
+}
+
+.reliquary {
+    color: white;
+    background-color: #52154E;
+}
+
+.skull {
+    height: 30%;
+    width: 30%;
+}
+
+.skull:hover {
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
